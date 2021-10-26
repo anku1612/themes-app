@@ -1,0 +1,44 @@
+import { action } from '@storybook/addon-actions'
+import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs/blocks'
+import Tabs from '@mui/material/Tabs'
+import Tab from '@mui/material/Tab'
+import Box from '@mui/material/Box'
+import AppBar from '@mui/material/AppBar'
+import { useTabs } from '../hooks'
+
+
+<Meta title='Navigation/Tabs'/>
+
+
+
+
+
+
+
+# Grid
+
+<Canvas>
+  <Story name='Default'>
+  
+   <Box sx={{ width: '100%' }}>
+      <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
+        <Tabs
+          aria-label='basic tabs example'
+        >
+          <Tab label='Item One' />
+          <Tab label='Item Two'/>
+          <Tab label='Item Three' />
+        </Tabs>
+      </Box>
+      <TabPanel value={1} index={0}>
+        Item One
+      </TabPanel>
+      <TabPanel value={2} index={1}>
+        Item Two
+      </TabPanel>
+      <TabPanel value={2} index={2}>
+        Item Three
+      </TabPanel>
+    </Box>
+  </Story>
+</Canvas>
